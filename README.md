@@ -35,23 +35,23 @@ Os dados consultados foram executados e exportados em 2 arquivos .csv para serem
 
 Este repositório contém uma Análise Exploratória de Dados (AED) sobre a estrutura salarial, o quadro de funcionários e a distribuição geográfica de uma organização, e a ralação entre eles. O projeto foi desenvolvido em Python utilizando bibliotecas para manipulação e visualização de dados, acompanhado de práticas de versionamento com Git e consultas SQL.
 
-1 - Foram carregados os arquivos .csv
-2 - Para cada um deles, foi realizada uma análise geral, verificando:
+1. Foram carregados os arquivos .csv
+2. Para cada um deles, foi realizada uma análise geral, verificando:
   - Consulta das primeiras linhas do dataframe
   - Tipos de colunas
   - Estatísticas descritivas (Cálculo de Média e Mediana)
   - Quantidade de dados nulos
   - Quantidade de valores repetidos
-3 - Tratamento de dados:
+3. Tratamento de dados:
    - Preenchimento de dados nulos
    - Exclusão dos camops de Data de Inicio e Fim de trabalho, pois não tinha dados suficientes para serem trabalhados.
    - Conversão do campo de data para datetime
-4 - Unificação dos dataframes em um novo dataframe
-5 - Nova revisão geral dos dados
-6 - Tratamento de dados:
+4. Unificação dos dataframes em um novo dataframe
+5. Nova revisão geral dos dados
+6. Tratamento de dados:
   - Com base em outras informações e com retornos únicos, completei dados faltantes
-7 - Cálculo de outliers do salário contratado. Só tinha um caso que era o Presidente da empresa e se entende a diferente de valores devido ao cargo.
-8 - Gráficos:
+7. Cálculo de outliers do salário contratado. Só tinha um caso que era o Presidente da empresa e se entende a diferente de valores devido ao cargo.
+8. Gráficos:
     1. BOXPLOT: SALÁRIOS PARA VISUALIZAR OUTLIERS
     2. PAINEL COM GRÁFICO EM BARRAS HORIZONTAL: MEDIANA E TOTAL SALARIAL POR CARGO E DEPARTAMENTO
     3. PLOTTAGEM: ADEQUAÇÃO SALARIAL: ESTIPULADO X CONTRATADO
@@ -160,9 +160,9 @@ Essas são algumas perguntas que não encontro nesse dataframe, mas que podem aj
 
 ## 6. Sugestões de Melhoria e Próximos Passos
 
-1 - Tratar as colunas de datas de contratação e término de contrato para viabilizar o cálculo do tempo de empresa (*tenure*) e a separação entre funcionários ativos e inativos.
-2 - Incluir uma coluna explícita de `NIVEL_HIERARQUICO` ou `TIPO_CARGO` no banco de dados relacional para facilitar o agrupamento de lideranças sem depender de filtros por nome de cargo.
-3 - Incorporar índices de custo de vida por cidade/país e taxas de câmbio atualizadas para comparar os salários internacionais de forma ajustada ao poder de compra local e outros fatores tributários. A empresa tem funcionários em várias regiões do mundo e o RH precisa desse levantamento para tomar decisões mais adequadas a cada situação. 
+1. Tratar as colunas de datas de contratação e término de contrato para viabilizar o cálculo do tempo de empresa (*tenure*) e a separação entre funcionários ativos e inativos.
+2. Incluir uma coluna explícita de `NIVEL_HIERARQUICO` ou `TIPO_CARGO` no banco de dados relacional para facilitar o agrupamento de lideranças sem depender de filtros por nome de cargo.
+3. Incorporar índices de custo de vida por cidade/país e taxas de câmbio atualizadas para comparar os salários internacionais de forma ajustada ao poder de compra local e outros fatores tributários. A empresa tem funcionários em várias regiões do mundo e o RH precisa desse levantamento para tomar decisões mais adequadas a cada situação. 
 Analisar se é vantajoso contratar na modalidade home office em diversas cidades, mesmo para cargos num mesmo departamento, ou se a contratação híbrida ou presencial, numa filial já existente, compensa.
-4 - Gerar indicadores de cada setor para calcular comprar o faturamento (individual e regional) com a folha salarial. No caso do setor de Ventas, tanto o gerente como seus liderados, tinham bons salários, comparando com outros departamentos, e também tem a diferença dos cargos de gerente e liderado, e a comparação entre mesmos tipos de cargos. Com indicadores podemos confirmar se os salários correspondentes às responsabilidades e se acompanham os retornos financeiros que a empresa estipula para cada departamento e cargo. 
+4. Gerar indicadores de cada setor para calcular comprar o faturamento (individual e regional) com a folha salarial. No caso do setor de Ventas, tanto o gerente como seus liderados, tinham bons salários, comparando com outros departamentos, e também tem a diferença dos cargos de gerente e liderado, e a comparação entre mesmos tipos de cargos. Com indicadores podemos confirmar se os salários correspondentes às responsabilidades e se acompanham os retornos financeiros que a empresa estipula para cada departamento e cargo. 
 
