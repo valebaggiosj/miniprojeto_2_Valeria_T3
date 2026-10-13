@@ -37,11 +37,11 @@ Este repositório contém uma Análise Exploratória de Dados (AED) sobre a estr
 
 1. Foram carregados os arquivos .csv
 2. Para cada um deles, foi realizada uma análise geral, verificando:
-  - Consulta das primeiras linhas do dataframe
-  - Tipos de colunas
-  - Estatísticas descritivas (Cálculo de Média e Mediana)
-  - Quantidade de dados nulos
-  - Quantidade de valores repetidos
+   - Consulta das primeiras linhas do dataframe
+   - Tipos de colunas
+   - Estatísticas descritivas (Cálculo de Média e Mediana)
+   - Quantidade de dados nulos
+   - Quantidade de valores repetidos
 3. Tratamento de dados:
    - Preenchimento de dados nulos
    - Exclusão dos camops de Data de Inicio e Fim de trabalho, pois não tinha dados suficientes para serem trabalhados.
@@ -49,18 +49,18 @@ Este repositório contém uma Análise Exploratória de Dados (AED) sobre a estr
 4. Unificação dos dataframes em um novo dataframe
 5. Nova revisão geral dos dados
 6. Tratamento de dados:
-  - Com base em outras informações e com retornos únicos, completei dados faltantes
+   - Com base em outras informações e com retornos únicos, completei dados faltantes
 7. Cálculo de outliers do salário contratado. Só tinha um caso que era o Presidente da empresa e se entende a diferente de valores devido ao cargo.
 8. Gráficos:
-    1. BOXPLOT: SALÁRIOS PARA VISUALIZAR OUTLIERS
-    2. PAINEL COM GRÁFICO EM BARRAS HORIZONTAL: MEDIANA E TOTAL SALARIAL POR CARGO E DEPARTAMENTO
-    3. PLOTTAGEM: ADEQUAÇÃO SALARIAL: ESTIPULADO X CONTRATADO
-    4. STRIP PLOT: SALÁRIO DE CADA FUNCIONÁRIO POR REGIÃO
-    5. GRÁFICO DE BARRAS VERTICAL: SALÁRIO POR CARGO, AGRUPADO POR CIDADE
+   - BOXPLOT: SALÁRIOS PARA VISUALIZAR OUTLIERS
+   - PAINEL COM GRÁFICO EM BARRAS HORIZONTAL: MEDIANA E TOTAL SALARIAL POR CARGO E DEPARTAMENTO
+   - PLOTTAGEM: ADEQUAÇÃO SALARIAL: ESTIPULADO X CONTRATADO
+   - STRIP PLOT: SALÁRIO DE CADA FUNCIONÁRIO POR REGIÃO
+   - GRÁFICO DE BARRAS VERTICAL: SALÁRIO POR CARGO, AGRUPADO POR CIDADE
  
 ---       
 
-## 4. Visualizações Geradas
+## 5. Visualizações Geradas
 
 Os gráficos gerados pelo script `analise.py` são salvos automaticamente na pasta `graficos/`:
 
@@ -136,7 +136,7 @@ Essas são algumas perguntas que não encontro nesse dataframe, mas que podem aj
 
 ---
 
-## 5. Estrutura do Repositório
+## 6. Estrutura do Repositório
 
 | Arquivo / Pasta | Descrição |
 | :--- | :--- |
@@ -145,20 +145,22 @@ Essas são algumas perguntas que não encontro nesse dataframe, mas que podem aj
 | `.gitignore` | Configuração do Git para ignorar o ambiente virtual (`.venv/`) e arquivos temporários. |
 | `README.md` | Documentação completa do projeto, metodologia, resultados e guia de execução. |
 | `graficos/` | Pasta contendo as imagens dos gráficos gerados em alta resolução (`.png`). |
+| `scripts_sql/` | Pasta contendo os arquivos de script sql executados no Oracle FreeSQL. |
+| `arquivos_csv/` | Pasta contendo as arquivos .csv extraídos dos scripts executados no banco de dados. |
 
 ---
 
 
-## 5. Como Executar o Projeto
+## 7. Como Executar o Projeto
 
-### 5.1. Pré-requisitos
+### 7.1. Pré-requisitos
 * Python 3.10 ou superior instalado.
 * Git instalado e configurado no sistema.
 
 
 ---
 
-## 6. Sugestões de Melhoria e Próximos Passos
+## 8. Sugestões de Melhoria e Próximos Passos
 
 1. Tratar as colunas de datas de contratação e término de contrato para viabilizar o cálculo do tempo de empresa (*tenure*) e a separação entre funcionários ativos e inativos.
 2. Incluir uma coluna explícita de `NIVEL_HIERARQUICO` ou `TIPO_CARGO` no banco de dados relacional para facilitar o agrupamento de lideranças sem depender de filtros por nome de cargo.
