@@ -129,8 +129,8 @@ ANÁLISE:
 O departamento executivo se localiza em Seattle junto com outros cargos gerenciais, enquanto que outros funcionários se espalham por algumas cidades. 
 Mas a cidade com maior quantidade de funcionários é San Francisco na América, seguida por Oxford na Europa, onde se encontra todo o departamento de Vendas.
 No dataframe não tinha informação de quantas filias tem a empresa, mas como em alguns casos poucas pessoas estão localizadas em determinada cidade, 
-estou deduzindo que elas poderiam em situação de trabalho remoto. Tomando como exemplo o departamento de Marketing que é o que tem um maior valor no total de salários, 
-podemos nos perguntar se eles estão em trabalho remoto e porquê todos estão localizados em Oxford. Isso está relacionado com o alto valor de salários, comparado com outros departamentos?
+estou deduzindo que elas poderiam estar em situação de trabalho remoto. Tomando como exemplo o departamento de Marketing, que é o que tem um maior valor no total de salários, 
+podemos nos perguntar se eles estão em trabalho remoto e porquê todos estão localizados em Toronto. Isso está relacionado com o alto valor de salários, comparado com outros departamentos?
 Mudaria considerando a contratação remota em diversas partes do mundo? Essa mudança afetaria os indicadores atuais da área? 
 Essas são algumas perguntas que não encontro nesse dataframe, mas que podem ajudar o RH a analisar os dados do departamento.
 
